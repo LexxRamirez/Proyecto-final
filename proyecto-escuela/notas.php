@@ -91,17 +91,33 @@ include("part-prin-boost.php");
 	<table style="margin:auto;">
 		<tr>
 			<td>
-				<label>Profesor:</label>
-			</td>
-			<td>
-				<input name="docente" type="text" class="form-control" <?php echo "value='$_SESSION[nombre]'";?>>
+				<h4 sttyle="font-size:20px"><label>
+				<?php 
+		            if(($_SESSION['usuario'])){
+		            	echo $_SESSION['nombre'];
+			            }
+			        if(($_SESSION['admin']=="si")){
+			            		echo "Administrador";
+			            	}
+			        
+			    ?>
+				</label></h4>
 			</td>
 		</tr>
 	</table>
 	<button type="submit" class="btn btn-primary" style="float: right">Generar reporte</button>
 	</form>
 	<form method="POST" action="registro_notas.php">
-		<button type="submit" class="btn btn-primary" style="float: right">Registrar notas</button>
+	<?php 
+	if(($_SESSION['admin']=="si")){
+		
+		}
+	else{
+		if(($_SESSION['usuario'])){
+				echo "<button type=\"submit\" class=\"btn btn-primary\" style=\"float: right\">Registrar notas</button>";
+			}
+		}
+	?>
 	</form>
 	<br>
 	<br>

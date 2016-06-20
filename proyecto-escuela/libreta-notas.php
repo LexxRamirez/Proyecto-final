@@ -10,6 +10,10 @@
 	<div id="libreta" style="width:1024px; margin: auto;">
 	<h2 align="center"><?php echo $nombre[0];?></h2>
 	<h3 align="center">Libreta de notas por asignatura y trimestres por asignatura</h3>
+	<form method="GET" action="report-librte-viw.php?id=">
+	<button type="submit" class="btn btn-primary" style="float: right">Generar reporte</button>
+	</form>
+	<a>repoerte</a>
 	<table style="width:1024px; margin: auto;" class="table table-hover table-bordered">
 	<thead>
 		<tr class="success">
