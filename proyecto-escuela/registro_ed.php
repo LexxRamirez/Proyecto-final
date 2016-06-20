@@ -15,7 +15,7 @@
                 <label>Año:</label>
             </td>
             <td>
-                <input type="text" name="anho" class="form-control" size="100%" <?php echo "value='$dt[anho]'";?>>
+                <input type="text" name="anho" class="form-control" size="100%" <?php echo "value='$dt[anho]'";?> required>
             </td>
         </tr>
         <tr>
@@ -23,7 +23,7 @@
                 <label>Grado: </label>
             </td>
             <td>
-                <select name="grado" onchange="llenar()" id="grado" class="form-control">
+                <select name="grado" onchange="llenar()" id="grado" class="form-control" required>
                     <option value="">Seleccione</option>
                     <?php
                     $query=mysql_query("SELECT * FROM grado");
@@ -42,7 +42,7 @@
                 <label>Matricula numero:</label>
             </td>
             <td>
-                <input type="text" name="matriculaN" class="form-control" <?php echo "value='$dt[matricula]'";?>>
+                <input type="text" name="matriculaN" class="form-control" <?php echo "value='$dt[matricula]'";?> required>
             </td>
         </tr>
         <tr>
@@ -50,7 +50,7 @@
                 <label>Nombre del alumno(a):</label>
             </td>
             <td>
-                <input type="text" name="nombre" class="form-control" <?php echo "value='$dt[nombre]'";?>>
+                <input type="text" name="nombre" class="form-control" <?php echo "value='$dt[nombre]'";?> required>
             </td>
         </tr>
         <tr>
@@ -58,7 +58,7 @@
                 <label>NIE</label>
             </td>
             <td>
-                <input type="text" name="nie" class="form-control" <?php echo "value='$dt[nie]'";?>>
+                <input type="text" name="nie" class="form-control" <?php echo "value='$dt[nie]'";?> required>
             </td>
         </tr>
         <tr>
@@ -66,7 +66,7 @@
                 <label>Fecha de nacimiento:</label>
             </td>
             <td>
-                <input type="text" name="fecha" class="form-control" size="36px" <?php echo "value='$dt[fecha_nacimiento]'";?>>
+                <input type="text" name="fecha" class="form-control" size="36px" <?php echo "value='$dt[fecha_nacimiento]'";?> required>
             </td>
          </tr>
          <tr>
@@ -74,7 +74,7 @@
                 <label>Edad:</label>
             </td>
             <td>
-                <input type="text" name="edad" class="form-control" size="37px" <?php echo "value='$dt[edad]'";?>>
+                <input type="text" name="edad" class="form-control" size="37px" <?php echo "value='$dt[edad]'";?> required>
             </td>
         </tr>
     </table>
@@ -85,13 +85,13 @@
                 <label>Año en el que estudio el ultimo grado:</label>
             </td>
             <td>
-                <input type="text" name="ultimo" size="12px" class="form-control" <?php echo "value='$dt[anho_ultimo_grado]'";?>>
+                <input type="text" name="ultimo" size="12px" class="form-control" <?php echo "value='$dt[anho_ultimo_grado]'";?> required>
             </td>
             <td style=" width:200px">
                 <label>Lugar de residencia:</label>
             </td>
             <td style=" width:200px">
-               <select name="residencia" class="form-control">
+               <select name="residencia" class="form-control" required>
                 <option value="">Seleccione</option>
                 <option value="rural" <?php if($dt["recidencia"] == "rural"){ echo "selected";}?>>Rural</option>
                 <option value="urbana" <?php if($dt["recidencia"] == "urbana"){ echo "selected";}?>>Urbana</option>
@@ -131,7 +131,7 @@
         <tr><td><br></td></tr>
         
     </table>
-    <button class="btn btn-primary">Guardar</button>
+    <button class="btn btn-primary">Siguiente</button>
 </form>
     </div>
     <br>

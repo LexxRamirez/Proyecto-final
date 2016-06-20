@@ -42,10 +42,10 @@ while($row = mysql_fetch_array($query))
 		<tr>
 		<td style='width:70px;'>".$row[0]."</td>
 		<td style='width:500px;'>".$row[3]."</td>
-		<td style='width:100px;'><input type='text' name='n1".$row[0]."' size='4px' id='NA1".$row[0]."' onkeyup='prom(".$row[0].")'></td>
-		<td style='width:100px;'><input type='text' name='n2".$row[0]."' size='4px' onkeyup='prom(".$row[0].")' id='NA2".$row[0]."'></td>
-		<td style='width:100px;'><input type='text' name='n3".$row[0]."' size='4px' id='NA3".$row[0]."' onkeyup='prom(".$row[0].")'></td>
-		<td style='width:100px;'><input type='text' name='n4".$row[0]."' size='4px' id='PROM".$row[0]."'></td></tr>"; 
+		<td style='width:100px;'><input style='color:black' type='text' name='n1".$row[0]."' size='4px' id='NA1".$row[0]."' onkeyup='prom(".$row[0].")'></td>
+		<td style='width:100px;'><input style='color:black' type='text' name='n2".$row[0]."' size='4px' onkeyup='prom(".$row[0].")' id='NA2".$row[0]."'></td>
+		<td style='width:100px;'><input style='color:black' type='text' name='n3".$row[0]."' size='4px' id='NA3".$row[0]."' onkeyup='prom(".$row[0].")'></td>
+		<td style='width:100px;'><input style='color:black' readonly type='text' name='n4".$row[0]."' size='4px'  id='PROM".$row[0]."'></td></tr>"; 
 		}
 		$compo = $compo."</table>
 		<button type='submit' class=\"btn btn-danger\">Guardar</button>

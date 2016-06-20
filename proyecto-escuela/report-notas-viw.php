@@ -20,7 +20,7 @@ if(empty($_SESSION["usuario"]))
         $html2pdf->pdf->SetDisplayMode('fullpage');
 //      $html2pdf->pdf->SetProtection(array('print'), 'spipu');
         $html2pdf->writeHTML($content, isset($_GET['vuehtml']));
-        $html2pdf->Output('reporte_usuarios.pdf');
+        $html2pdf->Output('reporte_notas.pdf');
     }
     catch(HTML2PDF_exception $e) {
         echo $e;

@@ -1,6 +1,6 @@
 <?php
+	include("sesion.php");
 	include("conexion.php");
-
 	$lista = $_GET["q"];
 	$tabla ="
 	<table style=\"float:right\">
@@ -38,9 +38,9 @@
 				<td align='center'>
 				<select style='width:70px;' class='form-control'>
 				<option value=''>Menu</option>
+				<option value='3' onclick='ver($row[0],3)'>Ver notas</option>
 				<option value='1' onclick='ver($row[0],1)'>Modificar</option>
 				<option value='2' onclick='ver($row[0],2)'>Eliminar</option>
-				<option value='3' onclick='ver($row[0],3)'>Ver notas</option>
 				</select>
 				</td> 
 				<div id='detalles$row[0]' style='display:none;'>
@@ -53,4 +53,6 @@
 	}
 	$compo = $compo."</tr></table>";
 	echo $tabla;
+	
+	
 ?>

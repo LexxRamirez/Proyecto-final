@@ -1,3 +1,7 @@
+<?php
+	include("sesion.php");
+	include("conexion.php");
+?>
 <link rel="stylesheet" href="css/reset2.css" type="text/css" media="all">
 		<link rel="stylesheet" href="css/style2.css" type="text/css" media="all">
 		<link rel="stylesheet" href="css/zerogrid2.css" type="text/css" media="all">
@@ -12,9 +16,26 @@
 					<ul id="menu">
 						<li class="active"><a href="dashboard.php"><span>Inicio</span></a></li>
 						<li><a href="m-alumnos.php"><span>Alumnos</span></a></li>
-						<li><a href="docentes.php"><span>Docentes</span></a></li>
+						<?php 
+		            		if(empty($_SESSION['usuario'])){
+			            }
+			            else{
+			            	if(($_SESSION['admin']=="si")){
+			            		echo "<li><a href=\"docentes.php\"><span>Docentes</span></a></li>";
+			            	}
+			            }
+			            ?>
+						<!--<li><a href="docentes.php"><span>Docentes</span></a></li>-->
 						<li><a href="notas.php"><span>Notas</span></a></li>
-						<li><a href="backup.php"><span>Backup</span></a></li>
+						<?php 
+		            		if(empty($_SESSION['usuario'])){
+			            }
+			            else{
+			            	if(($_SESSION['admin']=="si")){
+			            		echo "<li><a href=\"backup.php\"><span>Backup</span></a></li>";
+			            	}
+			            }
+			            ?>
 						<li><a href="#"><span>Ayuda</span></a></li>
 						<li><a href="logut.php" style="background-color:#5DA8FD; color:black"><span><?php echo $_SESSION["usuario"];?> (Exit)</span></a></li>
 					</ul>

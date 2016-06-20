@@ -26,7 +26,7 @@
                 <label>Repite grado:</label>
             </td>
             <td style=" width:200px">
-               <select name="repite" class="form-control">
+               <select name="repite" class="form-control" required>
                 <option value="">Seleccione</option>
                 <option value="si"  <?php if($dt["repite"] == "si"){ echo "selected";}?>>Si</option>
                 <option value="no" <?php if($dt["repite"] == "no"){ echo "selected";}?>>No</option>
@@ -36,7 +36,7 @@
                 <label>Estudio parbularia:</label>
             </td>
             <td style=" width:200px">
-               <select name="parbularia" class="form-control">
+               <select name="parbularia" class="form-control" required>
                 <option value="">Seleccione</option>
                 <option value="si" <?php if($dt["parbularia"] == "si"){ echo "selected";}?>>Si</option>
                 <option value="no" <?php if($dt["parbularia"] == "no"){ echo "selected";}?>>No</option>
@@ -75,7 +75,7 @@
             </td>
            
             <td style=" width:200px">
-               <select name="vive" class="form-control">
+               <select name="vive" class="form-control" required>
                 <option value="">Seleccione</option>
                 <option value="mama" <?php if($dt["vive"] == "mama"){ echo "selected";}?>>Mamá</option>
                 <option value="papa" <?php if($dt["vive"] == "papa"){ echo "selected";}?>>Papá</option>
@@ -116,7 +116,7 @@
                 
             </td>
             <td>
-                <input type="text" name="encargado" class="form-control" size="100%" <?php echo "value='$dt[encargado]'";?>>
+                <input type="text" name="encargado" class="form-control" size="100%" <?php echo "value='$dt[encargado]'";?> required>
             </td>
         </tr>
     </table>
@@ -126,7 +126,7 @@
                 <label>DUI:</label>
             </td>
             <td>
-                <input type="text" name="dui" size="36px;" class="form-control" <?php echo "value='$dt[dui]'";?>>
+                <input type="text" name="dui" size="36px;" class="form-control" <?php echo "value='$dt[dui]'";?> required>
             </td>
         </tr>
         <tr>
@@ -146,7 +146,7 @@
             </td>
         </tr>
     </table>
-   <button class="btn btn-primary">Guardar</button>
+   <button class="btn btn-primary">Siguiente</button>
 </form>
     </div>
     <br>

@@ -25,10 +25,9 @@
         
         <table class="page_header" >
             <tr>
-                <td style="width: 30%; color: #444444;">
-                    <h2><label>Centro Escolar La Canoa</label></h2>
+                <td style="width: 50%; color: #444444;">
+                    <h2><label>CENTRO ESCOLAR CÁNTON LA CANOA</label></h2>
                 </td>
-            
             </tr>
         </table>
     </page_header>
@@ -45,15 +44,15 @@
 
     <table cellspacing="0" style="width: 90%; text-align: left;font-size: 14pt; font-family:Times,serif;">
         <tr>
-            
-            <td align=center style="width:100%; ">LISTA DE ALUMNOS</td>
-            </tr>
+            <td align=center style="width:100%; ">LIBRETA DE NOTAS</td>
+        </tr>
+        <tr>
+            <td align=center style="width:100%;"><?php echo $nombre[0];?></td>
+        </tr>
             <tr>
             <td align=center style="width:100%; ">FECHA DE IMPRESION: <?php echo date("d-m-Y H:i:s");?></td>
         </tr>
-        <tr>
-            <td align=center style="width:100%; "><?php echo $nombre[0];?></td>
-        </tr>
+        
     </table>
      <br>
     <table <table align="center" cellspacing="1" border="1"style="width:100%; margin: auto;">
@@ -70,7 +69,7 @@
             <td colspan="4">
                 <label>Actividad3 (30%)</label>
             </td>
-            <td colspan="1" rowspan="4" style="width: 55px;">
+            <td colspan="1" rowspan="4" style="width: 70px;">
                 <label>Promedio final</label>
             </td>
         </tr>

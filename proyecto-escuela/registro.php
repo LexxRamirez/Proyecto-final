@@ -22,7 +22,7 @@
                 <label>Año:</label>
             </td>
             <td>
-                <input type="text" name="anho" class="form-control" size="100%">
+                <input type="text" name="anho" class="form-control" size="100%" required>
             </td>
         </tr>
         <tr>
@@ -47,7 +47,7 @@
                 <label>Matricula numero:</label>
             </td>
             <td>
-                <input type="text" name="matriculaN" class="form-control">
+                <input type="text" name="matriculaN" class="form-control" required>
             </td>
         </tr>
         <tr>
@@ -55,7 +55,7 @@
                 <label>Nombre del alumno(a):</label>
             </td>
             <td>
-                <input type="text" name="nombre" class="form-control">
+                <input type="text" name="nombre" class="form-control" required>
             </td>
         </tr>
         <tr>
@@ -63,7 +63,7 @@
                 <label>NIE</label>
             </td>
             <td>
-                <input type="text" name="nie" class="form-control">
+                <input type="text" name="nie" class="form-control" required>
             </td>
         </tr>
         <tr>
@@ -71,7 +71,7 @@
                 <label>Fecha de nacimiento:</label>
             </td>
             <td>
-                <input type="text" name="fecha" class="form-control" size="36px">
+                <input type="text" name="fecha" class="form-control" size="36px" required>
             </td>
          </tr>
          <tr>
@@ -79,7 +79,7 @@
                 <label>Edad:</label>
             </td>
             <td>
-                <input type="text" name="edad" class="form-control" size="37px">
+                <input type="text" name="edad" class="form-control" size="37px" required>
             </td>
         </tr>
     </table>
@@ -90,13 +90,13 @@
                 <label>Año en el que estudio el ultimo grado:</label>
             </td>
             <td>
-                <input type="text" name="ultimo" size="12px" class="form-control">
+                <input type="text" name="ultimo" size="12px" class="form-control" required>
             </td>
             <td style=" width:200px">
                 <label>Lugar de residencia:</label>
             </td>
             <td style=" width:200px">
-               <select name="residencia" class="form-control">
+               <select name="residencia" class="form-control" required>
                 <option value="">Seleccione</option>
                 <option value="rural">Rural</option>
                 <option value="urbana">Urbana</option>

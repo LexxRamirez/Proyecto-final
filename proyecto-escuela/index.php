@@ -11,7 +11,7 @@
 
       if($user=="Admin"){
         if($pass == $password){
-          $_SESSION['logeado']= "ok";
+          //$_SESSION['logeado']= "ok";
           $_SESSION['admin']= "si";
           $_SESSION['usuario'] =$user;
           //mysql_close($close);
@@ -60,8 +60,8 @@
     <div id="userbox">
         <form method="POST">
         <h1 id="signup" style="background-color: #1172E2; background-position: initial initial; background-repeat: initial initial;">Login</h1>
-        <input id="name" name="usuario" placeholder="Usuario" style="opacity: 5; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">
-        <input id="pass" type="password" name="pass" placeholder="Contraseña" style="opacity: 5; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">
+        <input id="name" name="usuario" placeholder="Usuario" required style="opacity: 5; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">
+        <input id="pass" type="password" name="pass" placeholder="Contraseña" required style="opacity: 5; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">
         <button id="signupb">Entrar</button>
         </form>
     </div>

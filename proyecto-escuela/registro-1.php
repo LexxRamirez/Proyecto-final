@@ -30,7 +30,7 @@ if(isset($_GET["nie"]))
                 <label>Repite grado:</label>
             </td>
             <td style=" width:200px">
-               <select name="repite" class="form-control">
+               <select name="repite" class="form-control" required>
                 <option value="">Seleccione</option>
                 <option value="si">Si</option>
                 <option value="no">No</option>
@@ -40,7 +40,7 @@ if(isset($_GET["nie"]))
                 <label>Estudio parvularia:</label>
             </td>
             <td style=" width:200px">
-               <select name="parbularia" class="form-control">
+               <select name="parbularia" class="form-control" required>
                 <option value="">Seleccione</option>
                 <option value="si">Si</option>
                 <option value="no">No</option>
@@ -79,7 +79,7 @@ if(isset($_GET["nie"]))
             </td>
            
             <td style=" width:200px">
-               <select name="vive" class="form-control">
+               <select name="vive" class="form-control" required>
                 <option value="">Seleccione</option>
                 <option value="mama">Mamá</option>
                 <option value="papa">Papá</option>
@@ -120,7 +120,7 @@ if(isset($_GET["nie"]))
                 
             </td>
             <td>
-                <input type="text" name="encargado" class="form-control" size="100%">
+                <input type="text" name="encargado" class="form-control" size="100%" required>
             </td>
         </tr>
     </table>
@@ -130,7 +130,7 @@ if(isset($_GET["nie"]))
                 <label>DUI:</label>
             </td>
             <td>
-                <input type="text" name="dui" size="36px;" class="form-control">
+                <input type="text" name="dui" size="36px;" class="form-control" required>
             </td>
         </tr>
         <tr>
@@ -150,7 +150,7 @@ if(isset($_GET["nie"]))
             </td>
         </tr>
     </table>
-   <button class="btn btn-primary">Guardar</button>
+   <button class="btn btn-primary">Siguiente</button>
 </form>
     </div>
     <br>

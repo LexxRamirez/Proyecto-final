@@ -21,8 +21,8 @@
         
         <table class="page_header" >
             <tr>
-                <td style="width: 20%; color: #444444;">
-                    <h2><label>Centro Escolar La Canoa</label></h2>
+                <td style="width: 50%; color: #444444;">
+                    <h2><label>CENTRO ESCOLAR CÁNTON LA CANOA</label></h2>
                 </td>
             
             </tr>

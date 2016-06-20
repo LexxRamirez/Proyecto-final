@@ -88,7 +88,7 @@
                     <label>N. de la madre:</label>
                 </td>
                 <td>
-                    <input type="text" name="nmadre" class="form-control" size="36px" <?php echo "value='$dt[Nmadre]'";?>>
+                    <input type="text" name="nmadre" class="form-control" size="36px" <?php echo "value='$dt[Nmadre]'";?> required>
                 </td>
                 <td>
                     <label>Edad:</label>
@@ -119,7 +119,7 @@
                     <label>N. del padre:</label>
                 </td>
                 <td>
-                    <input type="text" name="npadre" class="form-control" size="36px" <?php echo "value ='$dt[Npadre]'";?>>
+                    <input type="text" name="npadre" class="form-control" size="36px" <?php echo "value ='$dt[Npadre]'";?> required>
                 </td>
                 <td>
                     <label>Edad:</label>

@@ -97,13 +97,13 @@ function porc(porcentaje){
 				<label>Periodo: </label>
 			</td>
 			<td>
-				<input name="periodo" type="number" onkeyup="porc(this.value)" step="any" class="form-control">
+				<input name="periodo" type="number" onkeyup="porc(this.value)" step="any" class="form-control" required>
 			</td>
 			<td>
 				<label>Asignatura: </label>
 			</td>
 			<td>
-				<select name="asignatura" class="form-control">
+				<select name="asignatura" class="form-control" required>
 					<option value="">Seleccione</option>
 					<?php
 					$querys=mysql_query("SELECT * FROM materia");

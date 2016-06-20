@@ -89,7 +89,7 @@ $id=$_GET["id"];
                     <label>N. de la madre:</label>
                 </td>
                 <td>
-                    <input type="text" name="nmadre" class="form-control" size="36px">
+                    <input type="text" name="nmadre" class="form-control" size="36px" required>
                 </td>
                 <td>
                     <label>Edad:</label>
@@ -120,7 +120,7 @@ $id=$_GET["id"];
                     <label>N. del padre:</label>
                 </td>
                 <td>
-                    <input type="text" name="npadre" class="form-control" size="36px">
+                    <input type="text" name="npadre" class="form-control" size="36px" required>
                 </td>
                 <td>
                     <label>Edad:</label>
