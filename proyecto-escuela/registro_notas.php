@@ -153,6 +153,14 @@ function porc(porcentaje){
 if($_POST)
 {
 	$count = 0;
+	$per = "periodo".$_POST["periodo"];
+	$querrr = mysql_query("SELECT $per FROM notas WHERE id_grado = '$_POST[grado]' AND id_materia = '$_POST[asignatura]'");
+	if(mysql_num_rows($querrr) > 0)
+	{
+		echo "<script>alert('Ya se registraron notas para este periodo');</script>";
+	}
+	else
+	{
 	$querya = mysql_query("SELECT id_alumno FROM alumnos WHERE id_grado = '$_POST[grado]' ");
 	while($rowa = mysql_fetch_array($querya))
 	{
@@ -190,6 +198,7 @@ if($_POST)
 		if(mysql_num_rows($querya) == $count)
 		{
 			echo "<script>alert('Exito se realizaron $count inserciones');</script>";
-			}
+		}		
+	}
 }
 ?>
